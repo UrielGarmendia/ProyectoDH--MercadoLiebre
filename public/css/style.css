@@ -18,14 +18,14 @@ body {
 }
 
 .hamburguer-button {
-    background: #03264C;
+    background: #1259c3;;
     color: #fff;
     display: block;
     max-width: 50px;
-    padding: 15px 0;
+    padding: 14px 0;
     border-radius: 8px;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.3rem;
     margin: auto;
 }
 
@@ -206,6 +206,7 @@ body {
 
   footer p {
     margin-top: 0%;
+    font-weight: normal;
   }
 
  .footer-icono i {
