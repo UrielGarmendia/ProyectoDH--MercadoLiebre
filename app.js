@@ -6,9 +6,10 @@ const app = express();
 const publicFolderPath = path.resolve(__dirname, './public');
 app.use( express.static(publicFolderPath) );
 
-app.listen(5500, ()=> {
-    console.log('servidor corrriendo');
-});
+const PORT = process.env.PORT || 4000;
+
+
+
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/home.html'));
@@ -21,3 +22,7 @@ app.get('/register', (req, res) => {
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, './views/login.html'));
 })
+
+app.listen(PORT, ()=> {
+    console.log('servidor corrriendo en el puerto ' + PORT);
+});
